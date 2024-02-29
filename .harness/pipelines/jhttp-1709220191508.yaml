@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build_die_werewolf_zombie_jhttp_1709220192399
+  name: Build jhttp
+  orgIdentifier: default
+  projectIdentifier: test_flag_defaults
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.github
+        repoName: die-werewolf-zombie/jhttp
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
