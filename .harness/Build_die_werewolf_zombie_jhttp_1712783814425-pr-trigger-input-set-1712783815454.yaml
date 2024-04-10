@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_die_werewolf_zombie_jhttp_1712783814425-pr-trigger-input-set
+  identifier: Build_die_werewolf_zombie_jhttp_1712783814425prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: playground
+  pipeline:
+    identifier: Build_die_werewolf_zombie_jhttp_1712783814425
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
