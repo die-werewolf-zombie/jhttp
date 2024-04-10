@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_die_werewolf_zombie_jhttp_1712783814425-push-trigger-input-set
+  identifier: Build_die_werewolf_zombie_jhttp_1712783814425pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: playground
+  pipeline:
+    identifier: Build_die_werewolf_zombie_jhttp_1712783814425
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
